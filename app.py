@@ -15,7 +15,7 @@ class SampleForm(Form):
 @app.route('/', methods=['GET', 'POST'])
 def index():
     link_to_form = {'url': '/form'}
-    return render_template('index.html', link=link_to_form)
+    return render_template('home.html', link=link_to_form)
 
 
 @app.route('/form', methods=['GET', 'POST'])
